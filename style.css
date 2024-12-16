@@ -1,0 +1,127 @@
+/* style.css */
+
+/* Body Styling */
+body {
+    background: linear-gradient(to bottom, #000000, #00008B); /* Black to Dark Blue gradient */
+    min-height: 100vh; /* Ensures the gradient spans the kaspar entire viewport */
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, clean font */
+    color: #333333; /* Dark text for better readability */
+}
+
+/* Header Styling */
+header h1 {
+    font-size: 3rem;
+    color: #ffffff; /* White color for contrast */
+}
+
+header h2 {
+    font-size: 2rem;
+    color: #ffffff; /* White color for contrast */
+}
+
+/* Search Area Styling */
+.search-area p {
+    color: #ffffff; /* White text for visibility */
+    font-size: 1.2rem;
+}
+
+.search-box {
+    width: 100%;
+    max-width: 400px; /* Limits the width on larger screens */
+    padding: 12px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-box::placeholder {
+    color: #dddddd; /* Light grey placeholder text */
+}
+
+.search-box:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Toggle Button Styling */
+.togglebutton {
+    border-radius: 25px; /* More rounded for a pill shape */
+    border: 2px solid #ffffff; /* White border */
+    background-color: transparent; /* Transparent background */
+    color: #ffffff; /* White text */
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    margin: 5px;
+}
+
+.togglebutton:hover {
+    background-color: #ffffff; /* White background on hover */
+    color: #000000; /* Black text on hover */
+}
+
+.togglebutton:active {
+    background-color: #555555; /* Dark grey background when clicked */
+    color: #ffffff; /* White text when clicked */
+    border-color: #ffffff; /* Maintains white border */
+}
+
+.togglebutton.clicked {
+    background-color: #29ff22; /* Light green background when toggled */
+    border-color: #29ff22; /* Matching border color */
+    color: #ffffff; /* White text */
+}
+
+/* Domain Results Paragraph Styling */
+.domain-results-paragraph {
+    color: #333333; /* Dark text inside cards for readability */
+    margin: 0.2rem 0;
+}
+
+/* Success Button Styling */
+.btn-success {
+    background-color: #28a745; /* Bootstrap's success color */
+    border-color: #28a745;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Darker green on hover */
+    border-color: #1e7e34;
+}
+
+.btn-success:active {
+    background-color: #1e7e34; /* Even darker green when clicked */
+    border-color: #1c7430;
+}
+
+/* No More Results Message Styling */
+.domain-results .text-center.text-muted {
+    color: #aaaaaa; /* Light grey for subtlety */
+    font-style: italic;
+}
+
+/* Footer Button Styling */
+footer .btn-secondary {
+    border-radius: 25px; /* Rounded corners for consistency */
+    padding: 10px 30px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+footer .btn-secondary:hover {
+    background-color: #6c757d; /* Darker grey on hover */
+    border-color: #6c757d;
+}
+
+footer .btn-secondary:active {
+    background-color: #5a6268; /* Even darker grey when clicked */
+    border-color: #545b62;
+}
